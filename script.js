@@ -7,6 +7,8 @@ var abt_nav_el = document.getElementById('abt-nav-el');
 var exp_nav_el = document.getElementById('exp-nav-el');
 var app_nav_el = document.getElementById('app-nav-el');
 var proj_nav_el = document.getElementById('proj-nav-el');
+var what_i_lrnd_nav_el = document.getElementById('what-i-lrnd-nav-el');
+var cntcts_nav_el = document.getElementById('cntcts-nav-el');
 
 var swch_icon = document.getElementById('swch-icon');
 
@@ -80,6 +82,12 @@ var why_app_reasn_3 = document.getElementById('why-app-reasn-3');
 var projs = document.getElementsByClassName('proj');
 var projs_sec = document.getElementById('projs-sec');
 
+var skills = document.getElementsByClassName('skill');
+var what_i_lrnd_sec = document.getElementById('what-i-lrnd-sec');
+var what_i_lrnd_titl = document.getElementById('what-i-lrnd-titl');
+
+var contacts_sec = document.getElementById('contacts-sec');
+
 //game:
 var dots = document.getElementsByClassName('dot');
 var dots_sec = document.getElementById('dots-sec');
@@ -140,6 +148,18 @@ window.addEventListener("scroll", (e)=>{
         }
     }
 
+    if(what_i_lrnd_sec.getBoundingClientRect().top<window.innerHeight*0.6){ 
+        what_i_lrnd_titl.classList.add('what-i-lrnd-titl-ad')
+        for(let i=0; i<skills.length; i++){
+            skills[i].classList.add(`skill-ad`);
+            
+            setTimeout(() => { 
+                skills[i].classList.add(`skill-${i+1}-ad`);
+            }, 1200);
+
+        }
+    }
+
     if(feature_sec.getBoundingClientRect().top<window.innerHeight*0.6){ 
         game_init.classList.add('game-init-ad');
         game_hint.classList.add('game-hint-ad');
@@ -180,6 +200,22 @@ app_nav_el.addEventListener("click", (e)=>{
 proj_nav_el.addEventListener("click", (e)=>{ 
     window.scrollTo({
         top: proj_sec.getBoundingClientRect().top,
+        left: 0,
+        behavior: 'smooth'   
+      });
+});
+
+what_i_lrnd_nav_el.addEventListener("click", (e)=>{ 
+    window.scrollTo({
+        top: what_i_lrnd_sec.getBoundingClientRect().top,
+        left: 0,
+        behavior: 'smooth'   
+      });
+});
+
+cntcts_nav_el.addEventListener("click", (e)=>{ 
+    window.scrollTo({
+        top: contacts_sec.getBoundingClientRect().top,
         left: 0,
         behavior: 'smooth'   
       });
@@ -249,7 +285,7 @@ async function closeAllTheProjectCards(){
 
 
 
-//game/ feature:
+//game (feature):
 
 var counter = 0;
 var previousDotIndex = -1; // this variable will be used to ensure that is the user clicks on the red dot many time the counter increase by 1 only
