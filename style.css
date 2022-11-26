@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.808);
-    font-family: 'Antonio', 'Caveat', cursive, sans-serif;
+    font-family: 'Antonio', 'Oswald', 'Montserrat', cursive, sans-serif;
 }
 
 body, html{ 
@@ -261,7 +261,7 @@ main{
 .nat{
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     width: 100vw;
@@ -284,7 +284,8 @@ main{
 }
 
 .nat-lft{
-    width: 45vw;
+    position: relative;
+    width: 500px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -296,6 +297,7 @@ main{
     width: 90%;
     height: auto;
     font-size: 20px;
+    text-align: left;
 }
 .sep-red{
     height: 2px;
@@ -305,11 +307,12 @@ main{
 .cntry{
     font-size: 90px;
     font-weight: 900;
-    width: 90%;
+    width: 100%;
     opacity: 0.7;
 }
 .nat-rght{
-    width: 50vw;
+    position: relative;
+    width: 700px;
     height: auto;
     display: flex;
     justify-content: start;
@@ -349,17 +352,18 @@ main{
     margin: 15px 5px 5px 25px;
     font-size: 18px;
     text-align: justify;
-    text-align: justify;
 }
 
 .nat-glry{
     position: relative;
-    width: 100vw;
-    min-height: 75vh;
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nat-glry-txts{
@@ -368,7 +372,7 @@ main{
     height: fit-content;
     z-index: 22;
     height: auto;
-    width: 450px;
+    width: 600px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -387,7 +391,7 @@ main{
 }
 
 .nat-glry-txt{
-    font-size: 15vh;
+    font-size: 130px;
     font-weight: 800;
     opacity: 0.7;
     max-width: 99vw;
@@ -421,7 +425,7 @@ main{
 .nat-glry-scntxt{
     opacity: 0;
     color: #fd646f;
-    font-size: 16vh;
+    font-size: 140px;
     font-weight: 900;
     z-index: 22;
     max-width: 99vw;
@@ -693,13 +697,13 @@ main{
 .my-age-frst-dig{
     color: white;
     font-size: 12vh;
-    margin-left: 30px;
+    margin-left: 3vh;
 }
 .my-age-sec-dig{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 2.5vh;
 }
 .my-age-sec-dig-1, .my-age-sec-dig-2{
     color: white;
@@ -1258,7 +1262,7 @@ main{
 
 .why-app-titl{
     position: absolute;
-    font-size: 6.5vh;
+    font-size: 65px;
     color: black;
     opacity: 0.7;
     display: flex;
@@ -1409,7 +1413,7 @@ main{
     position: relative;
     width: 100%;
     height: auto;
-    padding: 30px 0 30px 0;
+    padding: 85px 0 80px 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -1895,7 +1899,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 40vh;
+    min-height: 400px;
 }
 
 .dot{
@@ -2119,6 +2123,7 @@ footer p{
     }
     .my-age-frst-dig, .my-age-sec-dig-1, .my-age-sec-dig-2{
         font-size: 8vh;
+        
     }
     .my-age-pre{
         font-size: 7vh;
@@ -2325,5 +2330,20 @@ footer p{
     .nat-glry-scntxt{
         font-size: 13vh;
     }
+
+    .age-qot{
+        font-size: 4.5vh;
+    }
+    .age-qot-ownr{
+        font-size: 5.5vh;
+    }
+    .my-age-frst-dig, .my-age-sec-dig-1, .my-age-sec-dig-2{
+        font-size: 5.5vh;
+        
+    }
+    .my-age-pre{
+        font-size: 4.5vh;
+    }
+
 }
 
