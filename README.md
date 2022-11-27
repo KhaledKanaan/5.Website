@@ -15,3 +15,6 @@ rev.1
 rev.2
 1. fix gallery element distribution problem
 2. fix game section min height problem
+
+rev.3
+1. add "know more" arrow on the cover page

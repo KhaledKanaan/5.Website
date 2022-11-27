@@ -476,6 +476,3 @@ game_lvl_decrse_btn.addEventListener('click', (e)=>{
             break;
     }
 });
-
-
-
